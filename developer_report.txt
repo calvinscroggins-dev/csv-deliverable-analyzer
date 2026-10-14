@@ -1,0 +1,18 @@
+Prototype Report: CSV Deliverable Analyzer
+Course: CSC505 – Principles of Software Engineering
+
+1. Purpose or intended use case
+I chose a deliverable analyzer because it relates to my duties as a data analyst, where I work with similar data for United States Marine Corps (USMC) product support reporting. The program analyzes a CSV file to calculate the number of finished and unfinished tasks, the finish percentage, and whether finished tasks were delivered earlier than planned, on time, or later than planned. This task used fictitious data.
+
+2. Tools or libraries used
+I implemented the program in Python in Visual Studio Code. The default modules proved to be enough for handling CSV files, comparing dates, counting records, and finding the input file; hence there was no need to install any additional libraries.
+
+3. Development challenges
+The first problem involved deliverables without due dates. Treating these deliverables as late would create an incorrect classification; therefore, I counted them separately. Another problem is that the program stops running if the file has missing columns, duplicate IDs, or incorrectly formatted dates.
+
+4. Future improvements
+I would like to see which open items are already overdue and filter the results by team or reporting period. Saving the results to another file would also make them easier to use in a dashboard. If I expanded the script, I would add automated tests and let users map their CSV column names to the expected fields.
+
+5. Lessons applicable to broader software development
+Even a small program requires choices about how the results should be interpreted. This was evident in the absence of due dates: the code would run without error but produce an incorrect count because the rule was wrong. Furthermore, one should check for weird input rather than just running the program with a sample file.
+
