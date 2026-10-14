@@ -1,0 +1,45 @@
+# CSV Deliverable Analyzer
+
+A Python prototype created for CSC505 – Principles of Software Engineering. It reads a CSV file and summarizes deliverable status and delivery timeliness.
+
+## Features
+
+- Counts total, completed, and open deliverables.
+- Calculates the completion rate.
+- Classifies completed items as early, on time, or late.
+- Counts items without due dates separately.
+- Checks for missing columns, duplicate IDs, and invalid dates.
+
+## How to run
+
+Install Python 3.9 or later, then download the repository files into one folder.
+
+Open a terminal in that folder and run:
+
+```bash
+python deliverable_analyzer.py
+```
+
+To analyze a different CSV file:
+
+```bash
+python deliverable_analyzer.py your_file.csv
+```
+
+No additional Python packages are required.
+
+## CSV format
+
+Required columns:
+
+```csv
+id,title,due_date,completed_date
+```
+
+Dates must use `YYYY-MM-DD`. Leave `completed_date` blank for open items.
+
+## Sample results
+
+The included sample contains six deliverables: four completed and two open, with a completion rate of 66.7%.
+
+All sample records are fictional.
